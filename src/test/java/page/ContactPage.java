@@ -83,4 +83,10 @@ public class ContactPage extends BasePage{
         click(By.xpath("//li/a/span"));
         return new DepartPage(driver);
     }
+
+    public TagPage toTag(){
+        click(By.linkText("标签"));
+        return new TagPage(driver);
+    }
+
 }
